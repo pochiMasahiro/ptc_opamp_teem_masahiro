@@ -69,6 +69,7 @@ spice_ignore=false}
 C {devices/code_shown.sym} 0 230 0 0 {name=s1 only_toplevel=false value="
 .option savecurrent
 .control
+set units=degree
 op
 show m
 save all
@@ -100,3 +101,8 @@ C {devices/lab_pin.sym} 1010 200 0 1 {name=p2 sig_type=std_logic lab=diffout}
 C {devices/vsource.sym} 1100 320 0 0 {name=vbias1 value=0.85 savecurrent=false}
 C {devices/gnd.sym} 1100 370 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 960 260 0 0 {name=l7 lab=GND}
+C {devices/code_shown.sym} 10 810 0 0 {name=measure only_toplevel=false value="""
+.measure ac gain find vdb(out) at=1e3
+.measure ac ugf when vdb(out)=0
+.measure ac phase find vp(out) at = 11.8e6
+"""}
