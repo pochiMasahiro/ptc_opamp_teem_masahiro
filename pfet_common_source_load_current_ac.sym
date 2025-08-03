@@ -17,11 +17,8 @@ N 720 70 730 70 {lab=GND}
 N 880 30 880 40 {lab=#net3}
 N 770 30 880 30 {lab=#net3}
 N 720 30 770 30 {lab=#net3}
-N 720 50 810 50 {lab=out}
-N 780 50 780 60 {lab=out}
 N 730 120 730 150 {lab=GND}
-N 780 120 780 130 {lab=GND}
-N 730 130 780 130 {lab=GND}
+N 720 50 810 50 {lab=out}
 C {devices/code.sym} 10 40 0 0 {name=PTC06_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -58,8 +55,3 @@ print @m.x1.m2[id]
 print @m.x1.m2[vgs] - @m.x1.m2[vth]
 .endc
 "}
-C {devices/capa.sym} 780 90 0 0 {name=C1
-m=1
-value=1p
-footprint=1206
-device="ceramic capacitor"}
