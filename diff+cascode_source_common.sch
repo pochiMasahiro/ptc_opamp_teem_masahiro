@@ -26,11 +26,8 @@ N 1620 180 1620 190 {lab=#net4}
 N 1510 180 1620 180 {lab=#net4}
 N 1460 180 1510 180 {lab=#net4}
 N 1470 270 1470 300 {lab=GND}
-N 1520 150 1520 180 {lab=#net4}
 N 1020 160 1040 160 {lab=#net4}
 N 1040 140 1040 160 {lab=#net4}
-N 1040 140 1520 140 {lab=#net4}
-N 1520 140 1520 150 {lab=#net4}
 N 670 210 670 260 {lab=#net1}
 N 560 210 560 260 {lab=#net2}
 N 460 210 460 260 {lab=#net3}
@@ -38,16 +35,25 @@ N 1020 200 1020 260 {lab=GND}
 N 1150 340 1150 360 {lab=GND}
 N 1070 180 1070 200 {lab=diffout}
 N 1150 200 1160 200 {lab=#net5}
-N 1150 200 1150 220 {lab=#net5}
 N 1150 220 1160 220 {lab=#net5}
-N 1150 220 1150 280 {lab=#net5}
 N 1460 200 1550 200 {lab=out}
 N 1470 270 1530 270 {lab=GND}
 N 1530 200 1530 210 {lab=out}
+N 1150 220 1150 280 {lab=#net5}
+N 1140 200 1150 200 {lab=#net5}
+N 1140 200 1140 250 {lab=#net5}
+N 1140 250 1150 250 {lab=#net5}
+N 1490 120 1490 200 {lab=out}
+N 1040 140 1550 140 {lab=#net4}
+N 1550 140 1550 180 {lab=#net4}
+N 1120 80 1270 80 {lab=diffout}
+N 1120 80 1120 180 {lab=diffout}
+N 1330 80 1490 80 {lab=out}
+N 1490 80 1490 120 {lab=out}
 C {diff.sym} 870 180 0 0 {name=x1}
 C {devices/vsource.sym} 460 290 0 0 {name=Vinn value="DC 2.5" savecurrent=false}
 C {devices/vsource.sym} 560 290 0 0 {name=vinp value="DC 2.5 AC 1" savecurrent=false}
-C {devices/vsource.sym} 670 290 0 0 {name=vbias value=0.9 savecurrent=false}
+C {devices/vsource.sym} 670 290 0 0 {name=vbias value=1.2 savecurrent=false}
 C {devices/gnd.sym} 670 340 0 0 {name=l4 lab=GND}
 C {devices/gnd.sym} 560 340 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 460 340 0 0 {name=l6 lab=GND}
@@ -94,7 +100,7 @@ print @m.x1.m3[vds] + @m.x1.m2[vds]
 .endc
 "}
 C {devices/lab_pin.sym} 1070 200 0 1 {name=p2 sig_type=std_logic lab=diffout}
-C {devices/vsource.sym} 1150 310 0 0 {name=vbias1 value=0.85 savecurrent=false}
+C {devices/vsource.sym} 1150 310 0 0 {name=vbias1 value=1.06 savecurrent=false}
 C {devices/gnd.sym} 1150 360 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 1020 260 0 0 {name=l7 lab=GND}
 C {devices/code_shown.sym} 70 810 0 0 {name=measure only_toplevel=false value="""
@@ -105,6 +111,11 @@ C {devices/code_shown.sym} 70 810 0 0 {name=measure only_toplevel=false value=""
 C {pfet_cascode_common_source_load_current.sym} 1310 200 0 0 {name=x2}
 C {devices/capa.sym} 1530 240 0 0 {name=C1
 m=1
-value=1p
+value=10p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 1300 80 1 0 {name=C2
+m=1
+value=100f
 footprint=1206
 device="ceramic capacitor"}

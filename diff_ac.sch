@@ -33,7 +33,7 @@ spice_ignore=false}
 C {diff.sym} 660 240 0 0 {name=x1}
 C {devices/vsource.sym} 250 300 0 0 {name=Vinn value="DC 2.5" savecurrent=false}
 C {devices/vsource.sym} 350 300 0 0 {name=vinp value="DC 2.5 AC 1" savecurrent=false}
-C {devices/vsource.sym} 460 300 0 0 {name=vbias value=0.9 savecurrent=false}
+C {devices/vsource.sym} 460 300 0 0 {name=vbias value=1.2 savecurrent=false}
 C {devices/vsource.sym} 950 310 0 0 {name=Vdd value=5 savecurrent=false}
 C {devices/gnd.sym} 830 310 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 950 360 0 0 {name=l2 lab=GND}

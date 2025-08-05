@@ -37,14 +37,14 @@ op
 show m
 save all
 print @m.x1.m3[vds] + @m.x1.m2[vds]
-dc vinp 0 5.0 0.01
-plot v(out) v(in)
+dc vbias 0.8 2.0 0.01
+plot v(in) v(out)
 .endc
 "}
 C {diff.sym} 770 240 0 0 {name=x1}
 C {devices/vsource.sym} 360 300 0 0 {name=Vinn value="DC 2.5" savecurrent=false}
 C {devices/vsource.sym} 460 300 0 0 {name=vinp value="DC 2.5 AC 1" savecurrent=false}
-C {devices/vsource.sym} 570 300 0 0 {name=vbias value=0.9 savecurrent=false}
+C {devices/vsource.sym} 570 300 0 0 {name=vbias value=1.2 savecurrent=false}
 C {devices/vsource.sym} 1060 310 0 0 {name=Vdd value=5 savecurrent=false}
 C {devices/gnd.sym} 940 310 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1060 360 0 0 {name=l2 lab=GND}
