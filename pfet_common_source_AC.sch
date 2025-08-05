@@ -60,7 +60,7 @@ m=1
 }
 C {devices/capa.sym} 580 210 0 0 {name=C1
 m=1
-value=100f
+value=10p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 580 260 0 0 {name=l4 lab=GND}

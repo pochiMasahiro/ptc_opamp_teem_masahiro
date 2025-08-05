@@ -61,7 +61,7 @@ C {devices/gnd.sym} 1590 300 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 1520 230 0 1 {name=p1 sig_type=std_logic lab=out}
 C {devices/capa.sym} 1490 270 0 0 {name=C1
 m=1
-value=15p
+value=10p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/code.sym} 20 70 0 0 {name=PTC06_MODELS
