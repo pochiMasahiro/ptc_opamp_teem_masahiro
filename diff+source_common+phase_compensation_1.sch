@@ -103,7 +103,7 @@ print @m.x1.m3[vds] + @m.x1.m2[vds]
 .endc
 "}
 C {devices/lab_pin.sym} 1040 230 0 1 {name=p2 sig_type=std_logic lab=diffout}
-C {devices/vsource.sym} 1130 350 0 0 {name=vbias1 value=0.85 savecurrent=false}
+C {devices/vsource.sym} 1130 350 0 0 {name=vbias1 value=0.9 savecurrent=false}
 C {devices/gnd.sym} 1130 400 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 990 290 0 0 {name=l7 lab=GND}
 C {devices/code_shown.sym} 40 840 0 0 {name=measure only_toplevel=false value="""
