@@ -45,32 +45,32 @@ value=".include $::LIB/mos.lib
 spice_ignore=false}
 C {primitives/nfet.sym} 300 260 0 0 {name=M1 
 model=nmos
-W=10u
-L=1u
+W=100u
+L=2u
 m=1
 }
 C {primitives/nfet.sym} 530 260 0 1 {name=M2 
 model=nmos
-W=10u
-L=1u
+W=100u
+L=2u
 m=1
 }
 C {primitives/nfet.sym} 400 370 0 0 {name=M3 
 model=nmos
 W=20u
-L=1u
+L=2u
 m=1
 }
 C {primitives/pfet.sym} 340 120 0 1 {name=M4 
 model=pmos
-W=30u
-L=1u
+W=35u
+L=2u
 m=1
 }
 C {primitives/pfet.sym} 490 120 0 0 {name=M5 
 model=pmos
-W=30u
-L=1u
+W=35u
+L=2u
 m=1
 }
 C {devices/iopin.sym} 420 430 0 0 {name=vss lab=vss}

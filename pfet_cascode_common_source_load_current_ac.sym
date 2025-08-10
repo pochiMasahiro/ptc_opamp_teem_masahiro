@@ -7,7 +7,6 @@ S {}
 E {}
 N 860 90 860 140 {lab=GND}
 N 280 220 280 240 {lab=GND}
-N 520 230 520 250 {lab=GND}
 N 1010 120 1010 140 {lab=GND}
 N 280 50 420 50 {lab=#net1}
 N 280 50 280 160 {lab=#net1}
@@ -18,15 +17,17 @@ N 900 50 1010 50 {lab=#net3}
 N 850 50 900 50 {lab=#net3}
 N 860 140 860 170 {lab=GND}
 N 420 50 550 50 {lab=#net1}
-N 430 70 550 70 {lab=#net2}
-N 430 70 430 80 {lab=#net2}
+N 430 70 550 70 {lab=#net4}
+N 430 70 430 80 {lab=#net4}
 N 850 70 890 70 {lab=out}
 N 890 70 940 70 {lab=out}
 N 910 70 910 80 {lab=out}
 N 860 140 910 140 {lab=GND}
-N 520 90 520 170 {lab=#net2}
-N 430 140 520 140 {lab=#net2}
-N 430 80 430 140 {lab=#net2}
+N 430 80 430 140 {lab=#net4}
+N 520 220 520 250 {lab=GND}
+N 520 90 520 160 {lab=#net2}
+N 430 140 430 160 {lab=#net4}
+N 430 220 430 250 {lab=GND}
 C {devices/code.sym} 20 50 0 0 {name=PTC06_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -35,7 +36,7 @@ value=".include $::LIB/mos.lib
 .include $::LIB/diode.lib"
 spice_ignore=false}
 C {devices/vsource.sym} 280 190 0 0 {name=vin value="DC 3.37 AC 1.0" savecurrent=false}
-C {devices/vsource.sym} 520 200 0 0 {name=vbias value=1.06 savecurrent=false}
+C {devices/vsource.sym} 520 190 0 0 {name=vbias value=1.1 savecurrent=false}
 C {devices/vsource.sym} 1010 90 0 0 {name=Vdd value=5 savecurrent=false}
 C {devices/gnd.sym} 860 170 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 1010 140 0 0 {name=l2 lab=GND}
@@ -63,8 +64,5 @@ print @m.x1.m2[vgs] - @m.x1.m2[vth]
 .endc
 "}
 C {pfet_cascode_common_source_load_current.sym} 700 70 0 0 {name=x1}
-C {devices/capa.sym} 910 110 0 0 {name=C1
-m=1
-value=10p
-footprint=1206
-device="ceramic capacitor"}
+C {devices/vsource.sym} 430 190 0 0 {name=vbias1 value=2.6 savecurrent=false}
+C {devices/gnd.sym} 430 250 0 0 {name=l3 lab=GND}

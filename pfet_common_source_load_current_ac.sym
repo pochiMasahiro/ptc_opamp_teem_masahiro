@@ -27,8 +27,8 @@ value=".include $::LIB/mos.lib
 .include $::LIB/diode.lib"
 spice_ignore=false}
 C {pfet_common_source_load_current.sym} 570 50 0 0 {name=x1}
-C {devices/vsource.sym} 280 170 0 0 {name=vin value="DC 3.70 AC 1" savecurrent=false}
-C {devices/vsource.sym} 390 170 0 0 {name=vbias value=0.85 savecurrent=false}
+C {devices/vsource.sym} 280 170 0 0 {name=vin value="DC 3.37 AC 1.0" savecurrent=false}
+C {devices/vsource.sym} 390 170 0 0 {name=vbias value=1.1 savecurrent=false}
 C {devices/vsource.sym} 880 70 0 0 {name=Vdd value=5 savecurrent=false}
 C {devices/gnd.sym} 730 150 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 880 120 0 0 {name=l2 lab=GND}

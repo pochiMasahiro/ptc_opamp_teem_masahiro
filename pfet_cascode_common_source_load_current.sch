@@ -31,13 +31,13 @@ value=".include $::LIB/mos.lib
 spice_ignore=false}
 C {primitives/nfet.sym} 440 310 0 0 {name=M1 
 model=nmos
-W=200u
+W=80u
 L=1u
 m=1
 }
 C {primitives/pfet.sym} 440 110 0 0 {name=M2 
 model=pmos
-W=300u
+W=160u
 L=1u
 m=1
 }
@@ -48,7 +48,7 @@ C {devices/opin.sym} 510 260 0 0 {name=vout lab=vout}
 C {devices/ipin.sym} 400 310 0 0 {name=vbias lab=vbias}
 C {primitives/pfet.sym} 440 210 0 0 {name=M3 
 model=pmos
-W=300u
+W=160u
 L=1u
 m=1
 }
