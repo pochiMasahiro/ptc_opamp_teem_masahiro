@@ -217,5 +217,5 @@ L=1u
 m=1
 }
 C {primitives/Poly_cap.sym} 1400 230 1 0 {name=C1 model=poly_cap W=26 L=26}
-C {primitives/R_pdiff.sym} 1310 230 1 0 {name=R2 model=R_pdiff W=1.0 L=145}
 C {devices/iopin.sym} 150 140 3 0 {name=vss2 lab=ib}
+C {primitives/R_poly.sym} 1310 230 1 0 {name=R1 model=R_poly W=1 L=300}
