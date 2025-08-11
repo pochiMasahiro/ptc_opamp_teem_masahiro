@@ -13,7 +13,7 @@ Masahiro [github](https://github.com/pochiMasahiro)
 
 ![回路](figure/opamp.png)
 
-![レイアウト](figure/layout.png)
+![レイアウト](figure/layout2.png)
 
 ![周波数特性1](figure/freq10pf.png)
 
