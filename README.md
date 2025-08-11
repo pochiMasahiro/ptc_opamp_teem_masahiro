@@ -15,7 +15,7 @@ Masahiro [github](https://github.com/pochiMasahiro)
 
 ![レイアウト](figure/layout.png)
 
-![周波数特性1](fugure/freq10pf.png)
+![周波数特性1](figure/freq10pf.png)
 
 
 
