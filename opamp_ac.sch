@@ -68,6 +68,6 @@ C {devices/code_shown.sym} 10 510 0 0 {name=measure only_toplevel=false value=""
 """}
 C {devices/capa.sym} 980 330 0 0 {name=C1
 m=1
-value=10p
+value=1p
 footprint=1206
 device="ceramic capacitor"}
